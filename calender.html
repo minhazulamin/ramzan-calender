@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-500">
+    <header>
+        <section class="lg:ml-32 lg:flex " >  
+            <div class="conteinar ml-56  mb-10  text-3xl">
+              <h1 class="text-green-500 text-3xl font-bold ">Real time clock : </h1>
+              <span class=" text-green-500 " id="hours">00</span>
+              <span class=" text-green-500">:</span>
+              <span class=" text-green-500" id="minute">00</span>
+              <span class=" text-green-500">:</span>
+              <span class=" text-green-500" id="seconds">00</span>
+              <span class=" text-green-500" id="sesson">PM</span>
+            </div>
+            <div class="lg:ml-96 mb-10   text-3xl lg:text-left">
+              <h1 class="text-green-500 text-3xl font-bold ">Time left : </h1>
+              <p  id="demo" class="text-green-500" ></p>
+            </div>
+          </section>
+    </header>
+    <main>
+        <table class="lg:flex lg:justify-center lg:content-center  ">
+            <tr class="shadow-lg">
+              <th class="border border-gray-600 px-6 text-gray-600 bg-green-500 text-2xl font-bold py-2">ramdan</th>
+              <th class="border border-gray-600  text-gray-600 bg-green-500 px-6  text-xl font-bold py-2">date</th>
+              <th class="border border-gray-600 px-6 text-gray-600 bg-green-500  text-xl font-bold py-2">day</th>
+              <th class="border border-gray-600 px-6 text-gray-600 bg-green-500  text-xl font-bold py-2">seheri time</th>
+              <th class="border border-gray-600 px-6 text-gray-600 bg-green-500  text-xl font-bold py-2">ifter time</th>
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">1</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">23 march</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Thursday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:39</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:14</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">2</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">24 march</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Friday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:38</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:14</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">3</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">25 march</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Saturday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:37</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:14</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">4</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">26 march</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Sunday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:36</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:15</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">5</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">27 march</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Monday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:35</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:15</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">6</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">28 march</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Tuesday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:34</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:16</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">7</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">29 march</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Wednesday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:32</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:16</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">8</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">30 march</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Thursday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:31</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:17</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">9</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">31 march</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Friday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:30</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:17</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">10</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">01 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Saturday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:29</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:18</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">11</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">02 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">	Sunday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:28</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:18</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">12</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">03 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Monday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:27</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:19</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">13</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Tuesday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:26</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:19</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">14</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">05 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Wednesday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:25</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:20</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">15</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Thursday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:24</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:20</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">16</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">07 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Friday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:23</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:21</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">17</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">08 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Saturday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:22</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:21</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">18</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">09 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Sunday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:21</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:22</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">19</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">10 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Monday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:20</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:22</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">20</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">11 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Tuesday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:19</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:22</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">21</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">12 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Wednesday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:18</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:23</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">22</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">13 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Thursday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:16</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:23</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">23</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">14 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Friday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:15</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:23</td>  
+            </tr>
+            <tr class="text-center ">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">24</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">15 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Saturday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:14</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:24</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">25</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">16 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Sunday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:13</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:24</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">26</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">17 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Monday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:12</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:24</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">27</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">18 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Tuesday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:11</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:25</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">28</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">19 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Wednesday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">04:10</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:25</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">29</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">20 april</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">Thursday</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">04:09</td> 
+              <td class="border border-green-500 px-6 text-green-500 text-xl font-bold py-2">06:26</td>  
+            </tr>
+            <tr class="text-center">
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">30</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">21 april</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">Friday</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">03:08</td> 
+              <td class="border border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-2">06:26</td>  
+            </tr>
+          </table>
+    </main>
+    <footer class="text-center  border-gray-600  text-gray-600 bg-green-500 text-xl font-bold py-16 mt-20">
+        <h1>note:</h1>
+        <h1>The calender represent the time of Dhaka bangladesh</h1>
+        <h1>New calender is publist if the 1st date of ramdan is changed</h1>
+        <h1>Stay withe us thank you</h1>
+       </footer>
+    <script src="assests/js/app.js"></script>
+</body>
+</html>

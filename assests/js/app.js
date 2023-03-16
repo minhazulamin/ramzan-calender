@@ -12,7 +12,7 @@ const quistionAns = [
   'রমজান আধ্যাত্মিক প্রতিবিম্ব, স্ব-উন্নতি এবং তীব্র ভক্তি ও উপাসনার সময়। মুসলমানরা ইসলামের শিক্ষার অনুসরণে আরও বেশি প্রচেষ্টা চালানোর আশাবাদী। সিয়াম ( সাওম) ভোর শুরু হয় এবং সূর্যাস্তের শেষে শেষ হয়। এই সময়ে খাওয়া এবং পান করা থেকে বিরত থাকার পাশাপাশি, মুসলমানরা যৌন সম্পর্ক এবং পাপী কথাবার্তা এবং আচরণ থেকে বিরত থাকে। ',
 
   'When is Ramadan?',
-  
+
   'Ramadan is the ninth month of the Islamic calendar, and it usually falls between march and april. This year, Ramadan is observed between 23 march 2023 and 21 april 2023.'
 ]
 const images = [
@@ -29,6 +29,10 @@ const images = [
  'assests/images/10.jpg'
   
 ]
+
+const calender = () =>{
+  window.location.href = 'calender.html'
+}
 
 let imgIndex = 0;
 const imagess = document.getElementById('images');
