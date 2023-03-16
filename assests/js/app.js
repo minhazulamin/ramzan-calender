@@ -1,3 +1,29 @@
+const images = [
+  
+ 'assests/images/0.jpg',
+ 'assests/images/2.jpg',
+ 'assests/images/1.jpg',
+ 'assests/images/4.jpg',
+ 'assests/images/5.jpg',
+ 'assests/images/7.jpg',
+ 'assests/images/3.jpg',
+ 'assests/images/8.jpg',
+ 'assests/images/9.jpg',
+ 'assests/images/10.jpg'
+  
+]
+
+let imgIndex = 0;
+const imagess = document.getElementById('images');
+setInterval( () =>{
+  if(imgIndex === images.length){
+    imgIndex = 0
+  }
+  const  imgUrl = images[imgIndex]
+  imagess.setAttribute('src', imgUrl )
+  imgIndex++;
+},3000)
+
 const displayTiem = () =>{
     const date = new Date();
     let hour = date.getHours();
